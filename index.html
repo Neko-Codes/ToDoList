@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sleek Item Tracker</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="Container">
+        <header>
+            <h1 class="Title">Sleek Item Tracker</h1>
+            <p class="Subtitle">Track your items with style!</p>
+        </header>
+
+        <div class="AddItemContainer">
+            <button id="AddButton" class="SleekButton">Add Item</button>
+            <input type="text" id="ItemName" class="SleekTextBox" placeholder="Enter Name">
+            <input type="text" id="ItemLocation" class="SleekTextBox" placeholder="Enter Location">
+            <input type="number" id="ItemQuantity" class="SleekTextBox" placeholder="Quantity" min="1">
+            <select id="ItemCategory" class="SleekTextBox">
+                <option value="">Select Category</option>
+                <option value="Clothing">Clothing</option>
+                <option value="Electronics">Electronics</option>
+                <option value="Furniture">Furniture</option>
+                <option value="Miscellaneous">Miscellaneous</option>
+            </select>
+        </div>
+
+        <ul id="ItemList" class="ItemList">
+
+        </ul>
+
+        <div class="ButtonContainer">
+            <button id="SaveButton" class="SleekButton">Save File</button>
+            <button id="LoadButton" class="SleekButton">Load File</button>
+        </div>
+
+        <footer class="Footer">
+            <p>Created by <span class="Author">Test</span> | 2024</p>
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

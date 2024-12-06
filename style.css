@@ -1,0 +1,161 @@
+/* General page styling */
+body {
+    background-color: rgb(20, 20, 20);
+    color: white;
+    font-family: 'CS Clair Mono', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    overflow: hidden;
+}
+
+/* Main container */
+.Container {
+    width: 80%;
+    max-width: 800px;
+    padding: 20px;
+    border-radius: 10px;
+    background: rgb(30, 30, 30);
+    box-shadow: 0 0 25px rgba(0, 0, 0, 0.6);
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    max-height: 90vh;
+    overflow-y: auto;
+}
+
+/* Header */
+.Title {
+    text-align: center;
+    font-size: 28px;
+    margin-bottom: 5px;
+}
+
+.Subtitle {
+    text-align: center;
+    font-size: 16px;
+    color: rgb(150, 150, 150);
+    margin: 0;
+}
+
+/* Add item container */
+.AddItemContainer {
+    display: flex;
+    gap: 15px;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+/* Buttons */
+.SleekButton {
+    background: linear-gradient(145deg, rgb(40, 40, 40), rgb(25, 25, 25));
+    color: white;
+    border: 2px solid rgb(50, 50, 50);
+    border-radius: 10px;
+    padding: 10px 15px;
+    cursor: pointer;
+    font-size: 14px;
+    transition: all 0.3s ease;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5), inset 2px 2px 5px rgba(50, 50, 50, 0.1);
+}
+
+.SleekButton:hover {
+    background: linear-gradient(145deg, rgb(60, 60, 60), rgb(40, 40, 40));
+    box-shadow: 0 0 10px rgba(251, 147, 255, 0.6);
+}
+
+.SleekButton:active {
+    background: rgb(20, 20, 20);
+    transform: scale(0.97);
+}
+
+/* Textbox */
+.SleekTextBox {
+    background: rgb(35, 35, 35);
+    border: none;
+    border-radius: 8px;
+    color: white;
+    padding: 10px;
+    font-size: 14px;
+    width: 200px;
+    box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.4);
+    transition: all 0.3s ease;
+}
+
+.SleekTextBox:focus {
+    outline: none;
+    box-shadow: 0 0 10px rgba(251, 147, 255, 0.6);
+}
+
+/* List styling */
+.ItemList {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+/* Individual item container */
+.Item {
+    background: rgb(45, 45, 45);
+    border-radius: 10px;
+    padding: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
+}
+
+.Item div {
+    color: white;
+    font-size: 14px;
+}
+
+.RemoveButton {
+    background: linear-gradient(145deg, rgb(30, 30, 30), rgb(10, 10, 10));
+    color: white;
+    border: none;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.3s ease;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.6), inset 2px 2px 5px rgba(255, 255, 255, 0.05);
+}
+
+.RemoveButton:hover {
+    background: rgb(60, 0, 0);
+    color: white;
+    box-shadow: 0 0 10px rgba(255, 0, 0, 0.6);
+    transform: scale(1.1);
+}
+
+/* Footer */
+.Footer {
+    text-align: center;
+    font-size: 12px;
+    color: rgb(100, 100, 100);
+    margin-top: 10px;
+}
+
+.Footer .Author {
+    color: rgb(251, 147, 255);
+}
+
+/* Additional button container */
+.ButtonContainer {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+}
